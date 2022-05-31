@@ -5,6 +5,7 @@
 ![image](./White%20board%201.png)
 
 ## Approach & Efficiency
+
 **Rational approach**
 - Define the problem.
 - Identify possible causes.
