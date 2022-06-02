@@ -6,7 +6,7 @@ return an array with the new value added at the
 middle index.
 
 ## Whiteboard Process
-![image](./whiteboard.png)
+![image](./shiftarray.png)
 ## Approach & Efficiency
 We need to insert a number in the middle of a given array,
 all of the elements should stay in the same order but the number
