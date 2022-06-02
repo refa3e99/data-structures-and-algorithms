@@ -5,4 +5,4 @@ def insertShiftArray(arr, num):
     newArr.append(num)
     return newArr+arr[mid:len(arr):]
 
-print(insertShiftArray([1,2],9))
+print(insertShiftArray([1,2,3,4,5],9))
