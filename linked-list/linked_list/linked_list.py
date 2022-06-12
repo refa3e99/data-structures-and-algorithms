@@ -9,15 +9,8 @@ class LinkedList:
 
     def insert(self, value):
         node = Node(value)
-        if self.head is None:
-            self.head = node
-            return
-        currentNode = self.head
-        while True:
-            if currentNode.nextNode is None:
-                currentNode.nextNode = node
-                break
-            currentNode = currentNode.nextNode
+        node.nextNode = self.head
+        self.head = node
 
     def to_string(self):
         strng = ''
@@ -25,7 +18,7 @@ class LinkedList:
         while currentNode is not None:
             strng += f"{ {currentNode.value} } -> "
             currentNode = currentNode.nextNode
-        print (strng + 'NULL')
+        return strng + 'NULL'
 
     def includes(self, value):
         item = Node(value)
