@@ -30,14 +30,14 @@ class LinkedList:
         current = self.head
         try:
             if index < 1:
-                pass
+                print("please stick to the range of the list")
             else:
                 for i in range(1, index):
                     current = current.nextNode
                 node.nextNode = current.nextNode
                 current.nextNode = node
         except:
-            pass
+            print("please stick to the range of the list")
 
     def insert_before(self, index, value):
         self.index = index
@@ -49,14 +49,14 @@ class LinkedList:
                 node.nextNode = current
                 self.head = node
             elif index < 1:
-                pass
+                print("please stick to the range of the list")
             else:
                 for i in range(1, index - 1):
                     current = current.nextNode
                 node.nextNode = current.nextNode
                 current.nextNode = node
         except:
-            pass
+            print("please stick to the range of the list")
 
     def to_string(self):
         strng = ''
