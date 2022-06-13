@@ -1,3 +1,30 @@
+# Challenge Summary
+Write the following methods for the Linked List class:
+
+- append
+arguments: new value
+adds a new node with the given value to the end of the list
+- insert before
+arguments: value, new value
+adds a new node with the given new value immediately before the first node that has the value specified
+- insert after
+arguments: value, new value
+adds a new node with the given new value immediately after the first node that has the value specified
+
+## Whiteboard Process
+![whiteBoard](WhiteBoard.png)
+
+## Approach & Efficiency
+append : bigO(n)
+insert before : bigO(n)
+insert after : bigO(n)
+- append : initiate a current as the head then Iterate through the list until the next of current is None, we add the node
+- insert after: initiate a current as the head then Iterate through the list until the given index then we add the node by making the next of the node is the next of the current and the next of the current is the node
+- insert before: initiate a current as the head then Iterate through the list until the given index minus one then we add the node by making the next of the node is the next of the current and the next of the current is the node
+
+## Solution
+![stepThrough](stepThrough.png)
+
 # Singly Linked List
 Linked List is a data structure that is made up of multiple nodes
 and each node points to the next node the first node
