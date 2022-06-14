@@ -12,7 +12,7 @@ arguments: value, new value
 adds a new node with the given new value immediately after the first node that has the value specified
 
 ## Whiteboard Process
-![whiteBoard](WhiteBoard.png)
+![whiteBoard](whiteBoard.png)
 
 ## Approach & Efficiency
 append : bigO(n)
