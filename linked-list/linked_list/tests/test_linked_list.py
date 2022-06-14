@@ -56,28 +56,33 @@ def test_append_multi_items():
     ll.append(1)
     ll.append(0)
     actual = ll.to_string()
-    expected = "{1} -> {4} -> {5} -> {3} -> {2} -> {1} -> {0} NULL"
+    expected = "{1} -> {4} -> {5} -> {3} -> {2} -> {1} -> {0} -> NULL"
+    assert actual == expected
 
 
 def test_insert_before_middle():
-    ll.insert_before(4,7)
+    ll.insert_before(3, 7)
     actual = ll.to_string()
-    expected = "{1} -> {4} -> {5} -> {7} -> {3} -> {2} -> {1} -> {0} NULL"
+    expected = "{1} -> {4} -> {5} -> {7} -> {3} -> {2} -> {1} -> {0} -> NULL"
+    assert actual == expected
 
 
 def test_insert_before_first_node():
-    ll.insert_before(1,0)
+    ll.insert_before(1, 10)
     actual = ll.to_string()
-    expected = "{0} -> {1} -> {4} -> {5} -> {3} -> {2} -> {1} -> {0} NULL"
+    expected = "{10} -> {1} -> {4} -> {5} -> {7} -> {3} -> {2} -> {1} -> {0} -> NULL"
+    assert actual == expected
 
 
 def test_insert_after_middle():
-    ll.insert_after(4,9)
+    ll.insert_after(7, 9)
     actual = ll.to_string()
-    expected = "{1} -> {4} -> {5} -> {7} -> {9} -> {3} -> {2} -> {1} -> {0} NULL"
+    expected = "{10} -> {1} -> {4} -> {5} -> {7} -> {9} -> {3} -> {2} -> {1} -> {0} -> NULL"
+    assert actual == expected
 
 
 def test_insert_after_last():
-    ll.insert_after(9,-1)
+    ll.insert_after(0, -1)
     actual = ll.to_string()
-    expected = "{1} -> {4} -> {5} -> {7} -> {9} -> {3} -> {2} -> {1} -> {0} -> {-1} -> NULL"
+    expected = "{10} -> {1} -> {4} -> {5} -> {7} -> {9} -> {3} -> {2} -> {1} -> {0} -> {-1} -> NULL"
+    assert actual == expected
