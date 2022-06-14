@@ -18,6 +18,12 @@ def test_insert():
     assert actual == expected
 
 
+def test_k_where_list_size_is_one():
+    actual = ll.kth_from_end(0)
+    expected = 3
+    assert actual == expected
+
+
 def test_insert_multi():
     ll.insert(5)
     ll.insert(4)
@@ -85,4 +91,28 @@ def test_insert_after_last():
     ll.insert_after(0, -1)
     actual = ll.to_string()
     expected = "{10} -> {1} -> {4} -> {5} -> {7} -> {9} -> {3} -> {2} -> {1} -> {0} -> {-1} -> NULL"
+    assert actual == expected
+
+
+def test_k_is_greater_than_length():
+    actual = ll.kth_from_end(12)
+    expected = "length is out of range"
+    assert actual == expected
+
+
+def test_k_is_equal_to_length():
+    actual = ll.kth_from_end(10)
+    expected = 10
+    assert actual == expected
+
+
+def test_k_is_not_positive():
+    actual = ll.kth_from_end(-1)
+    expected = "length is out of range"
+    assert actual == expected
+
+
+def test_k_in_middle():
+    actual = ll.kth_from_end(5)
+    expected = 9
     assert actual == expected

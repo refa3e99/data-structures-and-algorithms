@@ -80,6 +80,31 @@ class LinkedList:
             current = current.nextNode
         return False
 
+    def kth_from_end(self, k):
+        self.k = k
+
+        current = self.head
+        length = 0
+        while current.nextNode != "NULL":
+            if current.nextNode is None:
+                break
+            length += 1
+            current = current.nextNode
+        # print(f"length is {length}")
+        if k > length or k < 0:
+            print("length is out of range")
+            return "length is out of range"
+        start = length
+        current = self.head
+        while start != k:
+            # print(current.value)
+            if current.nextNode is None:
+                break
+            start -= 1
+            current = current.nextNode
+        print(f"{current.value}")
+        return current.value
+
 
 #ll = LinkedList()
 #ll.insert(2)
