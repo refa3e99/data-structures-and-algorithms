@@ -17,46 +17,51 @@ class LinkedList:
         node = Node(value)
 
         currentNode = self.head
-        while True:
-            if currentNode.nextNode is None:
-                currentNode.nextNode = node
-                break
-            currentNode = currentNode.nextNode
+        if currentNode is None:
+            self.head = node
+        else:
+            while True:
+                if currentNode.nextNode is None:
+                    currentNode.nextNode = node
+                    break
+                currentNode = currentNode.nextNode
 
-    def insert_after(self, index, value):
-        self.index = index
+    def insert_after(self, target, value):
+        self.target = target
         self.value = value
         node = Node(value)
         current = self.head
         try:
-            if index < 1:
-                print("please stick to the range of the list")
-            else:
-                for i in range(1, index):
-                    current = current.nextNode
+            if current.value == target:
                 node.nextNode = current.nextNode
                 current.nextNode = node
+            else:
+                while True:
+                    if current.value == target:
+                        node.nextNode = current.nextNode
+                        current.nextNode = node
+                        return True
+                    current = current.nextNode
+                return False
         except:
-            print("please stick to the range of the list")
+            print(f"The node of value {target} does not exist")
 
-    def insert_before(self, index, value):
-        self.index = index
+    def insert_before(self, target, value):
+        self.target = target
         self.value = value
         node = Node(value)
         current = self.head
-        try:
-            if index == 1:
-                node.nextNode = current
-                self.head = node
-            elif index < 1:
-                print("please stick to the range of the list")
-            else:
-                for i in range(1, index - 1):
-                    current = current.nextNode
-                node.nextNode = current.nextNode
-                current.nextNode = node
-        except:
-            print("please stick to the range of the list")
+        if current.value == target:
+            node.nextNode = current
+            self.head = node
+        else:
+            while current.nextNode is not None:
+                if current.nextNode.value == target:
+                    node.nextNode = current.nextNode
+                    current.nextNode = node
+                    return True
+                current = current.nextNode
+            print(f"The node of value {target} does not exist")
 
     def to_string(self):
         strng = ''
@@ -76,16 +81,18 @@ class LinkedList:
         return False
 
 
-ll = LinkedList()
-#ll.insert(1)
+#ll = LinkedList()
 #ll.insert(2)
+#ll.append(1)
 #ll.insert(4)
 #ll.insert(5)
-# ll.insert(5)
-#ll.insert_after(2, 3)
-#ll.insert_before(5, 0)
-#ll.insert_before(1, 7)
-#ll.insert_after(7, 0)
+#ll.insert(6)
+#ll.insert(7)
+#ll.insert(8)
+#ll.insert_after(8, 3)
+#ll.insert_before(9, 0)
+#ll.insert_before(0, 7)
+#ll.insert_after(1, 0)
 #print(ll.to_string())
 # print(ll.includes(6))
 # print(ll.includes(7))
