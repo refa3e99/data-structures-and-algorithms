@@ -7,3 +7,4 @@
 |Linked List|[Linked List](./linked-list/linked_list)|
 |Linked List Insertions|[Linked List Insertions](./linked-list/linked_list)|
 |linked-list-kth|[linked-list-kth](./linked-list/README.md)|
+|linked list zip|[linked list zip](./LinkedListZip/README.md)|
