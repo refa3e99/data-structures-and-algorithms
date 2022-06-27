@@ -9,3 +9,4 @@
 |linked-list-kth|[linked-list-kth](./linked-list/README.md)|
 |linked list zip|[linked list zip](./LinkedListZip/README.md)|
 |stacks and queues|[stacks and queues](./stacksAndQueues/README.md)|
+|StackQueuePseudo|[StackQueuePseudo](./StackQueuePseudo/README.md)|
