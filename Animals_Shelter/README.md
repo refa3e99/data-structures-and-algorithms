@@ -12,10 +12,12 @@ Return: either a dog or a cat, based on preference.
 If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![](WhiteBoard0.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+#### BigO(1)
+We define 2 classes for dogs and cats with name and type attribute
+define Animals_Shelter class with an enqueue method args (animal) that checks the type to push to dogs queue or cats queue, and a dequeue with an args(pref) to dequeue an animal based on the pref (if statements) if the pref is not cat or dog we return none
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+![](solution.png)
