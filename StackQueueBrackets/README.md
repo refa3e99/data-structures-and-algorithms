@@ -8,7 +8,8 @@ representing whether or not the brackets in the string are balanced
 <!-- Embedded whiteboard image -->
 ![](assets/WhiteBoard.png)
 ## Approach & Efficiency
-#### bigO (n^2)
+#### Time Complexity : bigO (n)
+#### Space Complexity : bigO (n)
 at first we filter the string so we have only brackets in it
 we iterate through the string and when we find an opening bracket we append it to a stack
 we see if the string is empty we return false because it cannot be empty for now
