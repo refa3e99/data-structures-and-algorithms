@@ -3,7 +3,7 @@ import pytest
 from treeMax.tree_max import *
 
 def test_max_one():
-    tree = BinarySearchTree()
+    tree = Tree()
     tree.root = TNode(5)
     tree.root.right = TNode(10)
     tree.root.left = TNode(7)
@@ -17,7 +17,7 @@ def test_max_one():
 
 
 def test_max_two():
-    tree = BinarySearchTree()
+    tree = Tree()
     tree.root = TNode(-3)
     tree.root.right = TNode(0)
     tree.root.left = TNode(43)

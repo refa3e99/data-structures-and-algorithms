@@ -11,7 +11,7 @@ Find the maximum value stored in the tree. You can assume that the values stored
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 #### time : bigO(n)
-#### space : bigO(1)
+#### space : space complexity of recursive algorithm is proportinal to maximum depth of recursion tree generated. If each function call of recursive algorithm takes O(m) space and if the maximum depth of recursion tree is 'n' then space complexity of recursive algorithm would be O(nm).
 - Algorithm
 we define a new function named get_max() in the class of the tree
 then we initiate a new variable to point at the root of the tree

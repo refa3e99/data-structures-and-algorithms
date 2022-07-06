@@ -51,6 +51,20 @@ class Tree:
         traverse(self.root)
         return arr
 
+    def get_max(self):
+        self.max = self.root.value
+
+        def traverse(root):
+            if root.value > self.max:
+                self.max = root.value
+            if root.left:
+                traverse(root.left)
+            if root.right:
+                traverse(root.right)
+
+        traverse(self.root)
+        return self.max
+
 
 class BinarySearchTree(Tree):
 
@@ -82,17 +96,3 @@ class BinarySearchTree(Tree):
                 if root.right is None:
                     return False
                 root = root.right
-
-    def get_max(self):
-        self.max = self.root.value
-
-        def traverse(root):
-            if root.value > self.max:
-                self.max = root.value
-            if root.left:
-                traverse(root.left)
-            if root.right:
-                traverse(root.right)
-
-        traverse(self.root)
-        return self.max
