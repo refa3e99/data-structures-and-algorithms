@@ -1,69 +1,117 @@
 import pytest
 
-from trees.BinaryTree.trees import *
+from trees.binaryTree.trees import *
 
-def test_instantiate_empty():
-
+# Can successfully instantiate an empty tree
+def test_instantiate_empty_tree():
     tree = BinarySearchTree()
     actual = tree.root
     expected = None
     assert actual == expected
 
 
-def test_add_to_empty():
-
+# Can successfully instantiate a tree with a single root node
+def test_instantiate_tree_with_single_root():
     tree = BinarySearchTree()
-    tree.add(10)
+    tree.root = TNode(4)
     actual = tree.root.value
-    expected = 10
+    expected = 4
     assert actual == expected
 
 
-def test_add_left():
-
-    tree = BinarySearchTree()
-    tree.add(10)
-    tree.add(5)
-    actual = tree.root.left.value
-    expected = 5
+# For a Binary Search Tree, can successfully add a left child and right child properly to a node
+def test_binary_search_add(binary_search_tree):
+    actual = binary_search_tree
+    expected = 8
     assert actual == expected
 
 
-def test_add_right():
+@pytest.fixture()
+def binary_search_tree():
+    bTree = BinarySearchTree()
+    bTree.add(23)
+    bTree.add(8)
+    bTree.add(42)
+    return bTree.root.left.value
 
-    tree = BinarySearchTree()
-    tree.add(10)
-    tree.add(15)
-    actual = tree.root.right.value
-    expected = 15
+
+# Can successfully return a collection from a preorder traversal
+def test_pre_order(pre_order_tree):
+    actual = pre_order_tree
+    expected = ['A', 'B', 'D', 'E', 'C', 'F']
     assert actual == expected
 
+@pytest.fixture()
+def pre_order_tree():
+    tree = Tree()
+    tree.root = TNode("A")
+    tree.root.left = TNode("B")
+    tree.root.right = TNode("C")
+    tree.root.left.left = TNode("D")
+    tree.root.left.right = TNode("E")
+    tree.root.right.left = TNode("F")
+    return tree.pre_order()
 
-def test_add_to_right(tree):
 
-    tree.add(30)
-    actual = tree.root.right.right.value
-    expected = 30
+# Can successfully return a collection from an inorder traversal
+def test_in_order(in_order_tree):
+    actual = in_order_tree
+    expected = ['D', 'B', 'E', 'A', 'F', 'C']
     assert actual == expected
 
+@pytest.fixture()
+def in_order_tree():
+    tree = Tree()
+    tree.root = TNode("A")
+    tree.root.left = TNode("B")
+    tree.root.right = TNode("C")
+    tree.root.left.left = TNode("D")
+    tree.root.left.right = TNode("E")
+    tree.root.right.left = TNode("F")
+    return tree.in_order()
 
-def test_add_to_left(tree):
-
-    tree.add(1)
-    actual = tree.root.left.left.left.value
-    expected = 1
+# Can successfully return a collection from a postorder traversal
+def test_post_order(post_order_tree):
+    actual = post_order_tree
+    expected = ['D', 'E', 'B', 'F', 'C', 'A']
     assert actual == expected
 
+@pytest.fixture()
+def post_order_tree():
+    tree = Tree()
+    tree.root = TNode("A")
+    tree.root.left = TNode("B")
+    tree.root.right = TNode("C")
+    tree.root.left.left = TNode("D")
+    tree.root.left.right = TNode("E")
+    tree.root.right.left = TNode("F")
+    return tree.post_order()
 
-def test_contains(tree):
-
-    actual = tree.contains(3)
+# Returns true or false for the contains method, given an existing or non-existing node value
+def test_contains_true(contains_tree):
+    actual = contains_tree
     expected = True
     assert actual == expected
 
+@pytest.fixture()
+def contains_tree():
+    bTree = BinarySearchTree()
+    bTree.add(23)
+    bTree.add(8)
+    bTree.add(42)
+    bTree.add(4)
+    return bTree.contains(4)
 
-def test_doesnt_contain(tree):
-
-    actual = tree.contains(100)
+def test_contains_false(contains_tree_false):
+    actual = contains_tree_false
     expected = False
     assert actual == expected
+
+@pytest.fixture()
+def contains_tree_false():
+    bTree = BinarySearchTree()
+    bTree.add(23)
+    bTree.add(8)
+    bTree.add(42)
+    bTree.add(6)
+    return bTree.contains(4)
