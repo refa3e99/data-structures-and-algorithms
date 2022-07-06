@@ -50,35 +50,56 @@ class Tree:
         traverse(self.root)
         return arr
 
+
 class BinarySearchTree(Tree):
 
     def add(self, value):
-        root = self.root
-        node = TNode(value)
-        while root is not None:
-            if node.value >= root.value:
-                if root.right is None:
-                    root.right = node
-                    break
-                root = root.right
-            elif node.value < root.value:
-                if not root.left:
-                    root.left = node
-                    break
-                root = root.left
+        if not self.root:
+            self.root = TNode(value)
+
+        def traverse(root):
+            if value < root.value:
+                if root.left:
+                    traverse(root.left)
+                else:
+                    root.left = TNode(value)
+            elif value > root.value:
+                if root.right:
+                    traverse(root.right)
+                else:
+                    root.right = TNode(value)
+
+        traverse(self.root)
 
     def contains(self, value):
-        root = self.root
-        while root:
-            if root.value == value:
+        if not self.root:
+            return False
+
+        def traverse(root):
+            if value == root.value:
+                # print("true")
                 return True
-            if root.value > value:
-                if not root.left:
+
+            else:
+                try:
+                    if value < root.value:
+                        # print("left")
+                        return traverse(root.left)
+
+                    elif value > root.value:
+                        # print("right")
+                        return traverse(root.right)
+                except:
                     return False
-            root = root.left
-            if root.value < value:
-                if root.right is None:
-                    return False
-                root = root.right
+
+        if traverse(self.root) is None:
+            return False
+        else:
+            return traverse(self.root)
 
 
+# if __name__ == "__main__":
+#     search_tree = BinarySearchTree()
+#     search_tree.root = TNode(2)
+#     search_tree.root.right = TNode(3)
+#     search_tree.root.left = TNode(1)

@@ -30,8 +30,8 @@ Create a subclass form binary Tree class called BinarySearchTree with these meth
 - pre-order : o(n)
 - in-order : o(n)
 - post-order : o(n)
-- add : O(log2n)
-- contain : O(log2n)
+- add : O(log n)
+- contain : O(log n)
 #### space complexity :
 - pre-order : o(n)
 - in-order : o(n)
