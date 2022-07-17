@@ -13,3 +13,4 @@
 |Animals_Shelter|[Animals_Shelter](./Animals_Shelter/README.md)|
 |StackQueueBrackets|[StackQueueBrackets](./StackQueueBrackets/README.md)|
 |trees|[trees](./trees/README.md)|
+|tree_fizz_buzz|[tree_fizz_buzz](./tree_fizz_buzz/README.md)|
