@@ -15,3 +15,4 @@
 |trees|[trees](./trees/README.md)|
 |tree_fizz_buzz|[tree_fizz_buzz](./tree_fizz_buzz/README.md)|
 |Insertion Sort|[Insertion Sort](./sorting/insertion/README.md)|
+|Merge Sort|[Merge Sort](./sorting/merge/README.md)|
