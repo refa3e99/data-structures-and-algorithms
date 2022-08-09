@@ -124,3 +124,15 @@ class HashTable:
         return self.__keys
 
 
+if __name__ == '__main__':
+    hash_map = HashTable()
+    hash_map.set('key_1', 'yousef')
+    hash_map.set('key_2', 'ahmad')
+    hash_map.set('key_3', 'mohammad')
+
+    print(hash_map.contains('key_1'))
+    print(hash_map.contains('key_5'))
+
+    print(hash_map.key())
+
+    print(hash_map.get('key_5'))
