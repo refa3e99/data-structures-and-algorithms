@@ -17,4 +17,4 @@
 |Insertion Sort|[Insertion Sort](./sorting/insertion/README.md)|
 |Merge Sort|[Merge Sort](./sorting/merge/README.md)|
 |Quick Sort|[Quick Sort](./sorting/quickSort/README.md)|
-|repeated word|[Repeated word](./data-structures-and-algorithms/hashmap_repeated_word/README.md)|
+|repeated word|[Repeated word](./hashmap_repeated_word/README.md)|
