@@ -8,6 +8,8 @@
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+#### time : BigO(n)
+#### space : BigO(n)
 - Create a function accepts a string
 - Clean the string and lower the capital letters
 - Split the string and move it to an array
