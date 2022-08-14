@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4621cd30-1cd3-4c47-8793-b47c1bf6ec4e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../LinkedListZip/.venv/Lib/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListZip/.venv/Lib/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinkedListZip/.venv/Lib/site-packages/pip/_vendor/pygments/sphinxext.py" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListZip/.venv/Lib/site-packages/pip/_vendor/pygments/sphinxext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LinkedListZip/.venv/Lib/site-packages/pip/_vendor/rich/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/../LinkedListZip/.venv/Lib/site-packages/pip/_vendor/rich/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.idea/linked-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.idea/linked-list.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/linked_list/Linked_List/kth_from_end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/linked_list/Linked_List/kth_from_end/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/linked_list/tests/test_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/linked_list/tests/test_linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/linked_list/zip_lists/linked_list_zip.py" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/linked_list/zip_lists/linked_list_zip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree_fizz_buzz/fizzBuzz.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tree_fizz_buzz/fizzBuzz.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DMCONnPapbIUbkCaAeocdpB8dI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/python/code_challenges/data-structures-and-algorithms/hashmap_left_join&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\python\code_challenges\data-structures-and-algorithms\hashmap_left_join" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4621cd30-1cd3-4c47-8793-b47c1bf6ec4e" name="Changes" comment="" />
+      <created>1660499533978</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660499533978</updated>
+    </task>
+    <servers />
+  </component>
+</project>
