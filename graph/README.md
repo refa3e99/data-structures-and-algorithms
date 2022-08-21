@@ -47,7 +47,27 @@ Returns the total number of nodes in the graph
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-O(1) for all the methods
+- Big O Notation for all methods:
+
+- add node:
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+
+- add edge:
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+
+- get nodes:
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+
+- get neighbors:
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+
+- size:
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
 
 ## API
 <!-- Description of each method publicly available in your Graph -->
