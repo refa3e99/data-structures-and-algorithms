@@ -26,6 +26,7 @@ def fizz_buzz(node):
 
 
 def fizz_buzz_tree(root):
+    arr = []
     if not isinstance(root, KTNode):
         raise Exception
 
@@ -35,11 +36,17 @@ def fizz_buzz_tree(root):
     new_root.value = new_node
     queue = Queue()
     queue.enqueue(new_root)
+    before = []
+    after = []
     while not queue.is_empty():
         new_root = queue.dequeue()
         for i in new_root.child:
             queue.enqueue(i)
+            before.append(i.value)
             i.value = fizz_buzz(i)
+            after.append(i.value)
+    print(before)
+    print(after)
     return new_tree
 
 
