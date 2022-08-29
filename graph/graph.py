@@ -52,6 +52,29 @@ class Graph:
         """
         return self.__adj_list.get(vertex, [])
 
+    def depth_first(self, node):
+        """
+        Arguments: Node (Starting point of search)
+        Return: A collection of nodes in their pre-order depth-first traversal order
+        """
+        def pre_order(vertex, nodes=[], visited=set()):
+            if not vertex:
+                return nodes
+            if vertex not in self.__adj_list:
+                return nodes
+            if vertex in visited:
+                return nodes
+
+            visited.add(vertex)
+            nodes.append(vertex.value)
+            edge_list = self.__adj_list[vertex]
+
+            for edge in edge_list:
+                pre_order(edge.vertex, nodes, visited)
+            return nodes
+
+        return pre_order(node)
+
 
 class Vertex:
     """
